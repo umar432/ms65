@@ -1,0 +1,15 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0;padding: 0;border: 0;font-size: 100%; font: inherit; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+body { line-height: 1; background-image:url('../images/bg.jpg'); background-repeat:repeat-x;  background-attachment: fixed;  background-position: center bottom; }
+ol, ul { 	list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {	content: '';content: none;}
+table { border-collapse: collapse;border-spacing: 0; } /*End of Reset*/
+@font-face{font-family:'NoaLight';src:url("../font/NoaLTW02-Light.EOT");src:url("../font/NoaLTW02-Light.EOT?#iefix") format("embedded-opentype"),url("/ams/frontend/2.26.12/font/NoaLTW02-Light.woff") format("woff"),url("/ams/frontend/2.26.12/font/NoaLTW02-Light.ttf") format("truetype");font-weight:normal;font-style:normal}
+#mtn{width:100%; height:100%;}
+#hdr{margin-top:40px; background-image:url('../images/hdr_bdr.jpg'); background-repeat:repeat-x;  }
+.logo img{ position:relative; top:-25px; left:10px;}
+.rtp-logo{ border-left:1px solid #00A1DE;font-family: 'NoaLight', verdana, arial, sans-serif;color: #00A1DE;font-size: 28px; position:relative; top:-30px; left:20px; padding-left:10px; }
+#fdr{ border-top:1px solid #ccc; text-align:center; padding:10px;font:13px/1.6 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif}
+#mdctn{}
+.tab{border:1px solid #ccc; margin-bottom:20px; font:13px/1.6 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif}
