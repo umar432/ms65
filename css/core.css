@@ -6,7 +6,7 @@ a{outline:none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {	content: '';content: none;}
 table { border-collapse: collapse;border-spacing: 0; } /*End of Reset*/
-#mctn{width:320px; padding:1px;}
+#mctn{width:240px; padding:1px;}
 #hdr{height:38px; border:1px solid #00a1de;}
 #tit{height:29px; background-color: #E37222; margin-top:1px;}
 #midlyr{}
