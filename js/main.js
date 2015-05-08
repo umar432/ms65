@@ -1,6 +1,7 @@
 $(document).ready(function() {
    
-	alert($( window ).width());
+	alert($( window ).height());
+	
 	$('tr').click(function(event) {
 		
         $('tr').not(this).removeClass('clicked');
