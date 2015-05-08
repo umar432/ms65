@@ -1,137 +1,48 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
 <html>
 <head>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width"> 
+  <meta name=“mobileoptimized” content=“240”> 
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"> 
   <link rel="stylesheet" href="css/core.css" />
   <script type="text/JavaScript" src="js/jquery.min.js"></script>
   <script type="text/JavaScript" src="js/main.js" type="text/"></script>
 </head>
 <body>
-<div id="mtn">
+<!--Main Container Start-->
+<div id="mctn">
+	<!--Header Start Width 240px & Height 50px-->
 	<div id="hdr">
-	<div class="hlft">
-	<span id="bckbtn"><img src="images/back.jpg" width="25px" height="25px"/></span>
-	<span class="logo"><img src="images/klm_head@2x.png" alt="KLM" width="43" height="26"></span>
-	<span class="rtp-logo">RTP App</span>
-	</div><!--Left-->
-	<div class="hrht">
-	<span id="logout"><img src="images/Logout.jpg"width="25px" height="25px"/></span>
-	</div><!--Right -->		
-	</div><!--Header End-->
-	<div style="clear:both;"></div>
-	<div id="mdctn">
-		<div id="bdytit">
-		<div class="blft">General Cargo</div>
-		<div class="brht">Welcome, Smith</div>
-		</div><!--Body Title-->
-		<div style="clear:both;"></div>
-	<div style="clear:both; display:block;">
-	<table border="" cellpadding="0" cellspacing="0" width="100%" class="tab">
-	<thead>
-		<th></th>
-		<th>Flight</th>
-		<th>ORG</th>
-		<th>EBD</th>
-	</thead>
-	<tbody>
+		
+	</div>
+	<!--Header End-->
+	<!-- Title Start Width 240px & Height 20px-->
+	<div id="tit">
+	
+	</div>
+	<!-- Title End-->
+	<!--Middle Layer Start Width 240px & Height 20px -->
+	<div id="midlyr">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
-		<td><input class="rad" type="radio" name="imgsel"  value="" checked="checked" /></td>
-		<td>KL1395</td>
-		<td>PU156</td>
-		<td>12:45</td>
+		<td>1</td>
+		<td style="border-right:0px;">2</td>
 	</tr>
 	<tr>
-		<td><input class="rad" type="radio" name="imgsel"  value="" checked="checked" /></td>
-		<td>KL1395</td>
-		<td>PU156</td>
-		<td>12:45</td>
+		<td>3</td>
+		<td style="border-right:0px;">4</td>
 	</tr>
 	<tr>
-		<td><input class="rad" type="radio" name="imgsel"  value="" checked="checked" /></td>
-		<td>KL1395</td>
-		<td>PU156</td>
-		<td>12:45</td>
-	</tr>
-	<tr>
-		<td><input class="rad" type="radio" name="imgsel"  value="" checked="checked" /></td>
-		<td>KL1395</td>
-		<td>PU156</td>
-		<td>12:45</td>
-	</tr>
-	<tr>
-		<td><input class="rad" type="radio" name="imgsel"  value="" checked="checked" /></td>
-		<td>KL1395</td>
-		<td>PU156</td>
-		<td>12:45</td>
-	</tr>
-	<tr>
-		<td><input class="rad" type="radio" name="imgsel"  value="" checked="checked" /></td>
-		<td>KL1395</td>
-		<td>PU156</td>
-		<td>12:45</td>
-	</tbody>
+		<td>5</td>
+		<td style="border-right:0px;">6</td>
 	</tr>
 	</table>
 	</div>
-	<!--Button Area-->
-	<div>
-		<div class="blu-cen-btn">I PICK IT </div>
-		
+	<!--Middle Layer End-->
+	<!-- Footer Start Width 240px & Height 20px -->
+	<div id="fdr">
 	</div>
-	</div><!--Middle Container End-->
-	<div id="fdr">&copy; KLM CARGO 2015</div><!--Footer Container End-->
-	   
-<input type="button" id="btnShowSimple" value="Simple Dialog" />
-<input type="button" id="btnShowModal" value="Modal Dialog" />
-   
-<br /><br />       
-	<div id="output"></div>
-   
-<div id="overlay" class="web_dialog_overlay"></div>
-   
-<div id="dialog" class="web_dialog">
-   <table style="width: 100%; border: 0px;" cellpadding="3" cellspacing="0">
-      <tr>
-         <td class="web_dialog_title">Online Survey</td>
-         <td class="web_dialog_title align_right">
-            <a href="#" id="btnClose">Close</a>
-         </td>
-      </tr>
-      <tr>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-      </tr>
-      <tr>
-         <td colspan="2" style="padding-left: 15px;">
-            <b>Choose your favorite mobile brand? </b>
-         </td>
-      </tr>
-      <tr>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-      </tr>
-      <tr>
-         <td colspan="2" style="padding-left: 15px;">
-            <div id="brands">
-               <input id="brand1" name="brand" type="radio" checked="checked" value="Nokia" /> Nokia
-               <input id="brand2" name="brand" type="radio" value="Sony" /> Sony
-               <input id="brand3" name="brand" type="radio" value="Motorola" /> Motorola
-            </div>
-         </td>
-      </tr>
-      <tr>
-         <td>&nbsp;</td>
-         <td>&nbsp;</td>
-      </tr>
-      <tr>
-         <td colspan="2" style="text-align: center;">
-            <input id="btnSubmit" type="button" value="Submit" />
-         </td>
-      </tr>
-   </table>
+	<!-- Footer End-->
 </div>
-	
-	
-</div><!--Main Container End -->
+<!--Main Container End-->
 </body>
 </html>

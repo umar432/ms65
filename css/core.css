@@ -1,89 +1,14 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0;padding: 0;border: 0;font-size: 100%; font: inherit; vertical-align: baseline;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
-body {  xbackground-image:url('../images/bg.jpg'); background-repeat:repeat-x;  background-attachment: fixed;  background-position: center bottom; }
+body {  xbackground-image:url('../images/bg.jpg'); background-repeat:repeat-x;  background-attachment: fixed;  background-position: center bottom; font:13px/1.6 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif; }
 ol, ul { 	list-style: none;}
 a{outline:none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {	content: '';content: none;}
 table { border-collapse: collapse;border-spacing: 0; } /*End of Reset*/
-@font-face{font-family:'NoaLight';src:url("../font/NoaLTW02-Light.EOT");src:url("../font/NoaLTW02-Light.EOT?#iefix") format("embedded-opentype"),url("/ams/frontend/2.26.12/font/NoaLTW02-Light.woff") format("woff"),url("/ams/frontend/2.26.12/font/NoaLTW02-Light.ttf") format("truetype");font-weight:normal;font-style:normal}
-#mtn{width:100%; height:100%;}
-#hdr{ background-image:url('../images/hdr_bdr.jpg'); background-repeat:repeat-x; height:60px; }
-.hlft{float:left;  display:block; width:85%;height:50px;}
-.hrht{float:right;display:block; width:15%; height:50px;}
-.logo img{padding-top:8px;  padding-left:5px; padding-right:8px; }
-#bckbtn img{ padding-top:12px;  padding-left:8px; xdisplay:none;}
-.rtp-logo{ border-left:1px solid #ccc;font-family: 'NoaLight', verdana, arial, sans-serif;color: #00A1DE;font-size: 18px; padding-left:8px; position: relative;top: -3px;}
-#logout{ text-align:right;s clear:both; padding-top:12px; float:right; padding-right:8px;}
-#fdr{ border-top:1px solid #ccc; text-align:center; padding:10px;font:13px/1.6 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif; background-color:#eee;}
-#mdctn{ padding-left:8px; padding-right:8px; padding-bottom:10px;}
-
-#bdytit{ height:25px; margin-bottom:10px;}
-.blft{float:left;  display:block; width:50px%;height:25px; color:#E37222; font:13px/1.6 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif}
-.brht{float:right;display:block; width:50%; height:25px; text-align:right; font:13px/1.6 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif}
-.tab{border:1px solid #8dc9e8; margin-bottom:20px; font:13px/1.6 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif; }
-.tab thead th{ background-color:#0da6e0; height:40px; color:#fff; line-height:40px; }
-.tab tbody tr td{ border-bottom: 1px dotted #8dc9e8; height:40px;line-height:40px; padding-left:5px; text-align:center; }
-.clicked_t{background:#f1f8fd url('../images/Checkmark.jpg'); background-repeat:no-repeat; 8px 8px;background-repeat:no-repeat; width:25px; }
-.clicked_f{background:#FFFFFF url('../images/Checkmark_fl.jpg') 8px 8px;background-repeat:no-repeat; width:25px; }
-.clicked{background-color:#98c2ed;}
-.blu-cen-btn{background-image:url('../images/blu_cn_btn.jpg');  height:50px;  color:#fff; line-height:50px; font:13px/50px "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif; font-size: 22px; text-align:center; border-left: 1px solid #00a1db; border-right:1px solid #00a1db; font-weight:600}
-.tab input{ width:20px; height:20px;}
-
-/*Model or Pop-up Window*/
-.web_dialog_overlay
-{
-   position: fixed;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   height: 100%;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   background: #000000;
-   opacity: .15;
-   filter: alpha(opacity=15);
-   -moz-opacity: .15;
-   z-index: 101;
-   display: none;
-}
-.web_dialog
-{
-   display: none;
-   position: fixed;
-   width: 380px;
-   height: 200px;
-   top: 50%;
-   left: 50%;
-   margin-left: -190px;
-   margin-top: -100px;
-   background-color: #ffffff;
-   border: 2px solid #336699;
-   padding: 0px;
-   z-index: 102;
-   font-family: Verdana;
-   font-size: 10pt;
-}
-.web_dialog_title
-{
-   border-bottom: solid 2px #336699;
-   background-color: #336699;
-   padding: 4px;
-   color: White;
-   font-weight:bold;
-}
-.web_dialog_title a
-{
-   color: White;
-   text-decoration: none;
-}
-.align_right
-{
-   text-align: right;
-}
-
-
-
-
+#mctn{width:320px; padding:1px;}
+#hdr{height:38px; border:1px solid #00a1de;}
+#tit{height:29px; background-color: #E37222; margin-top:1px;}
+#midlyr{}
+#midlyr table tr td{background-color:#00a1de; border:1px solid #fff; height:75px}
+#fdr{height:20px; border:1px solid #ccc;}
