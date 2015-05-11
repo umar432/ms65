@@ -6,9 +6,18 @@ a{outline:none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {	content: '';content: none;}
 table { border-collapse: collapse;border-spacing: 0; } /*End of Reset*/
-#mctn{width:240px; padding:1px;}
-#hdr{height:38px; border:1px solid #00a1de;}
-#tit{height:29px; background-color: #E37222; margin-top:1px;}
-#midlyr{}
-#midlyr table tr td{background-color:#00a1de; border:1px solid #fff; height:75px}
-#fdr{height:20px; border:1px solid #ccc;}
+body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif;}
+#mcon{ width:240px;padding:1px;}
+.clear{clear:both;}
+#hdr{}
+.hdr-logo{ float:left;border:1px solid #8dc9e8; width:109px; height:42px; padding-top:5px; padding-left:8px;}
+.hdr-logo img{padding-right:2px;}
+.hdr-ltxt{ font-size:18px; color:#005b82; border-left:1px solid #ccc; padding-left:5px;}
+.hdr-out{float:left;border:1px solid #8dc9e8; width:59px; height:47px; margin-left:1px; line-height:80px; text-align:center; background:url('../img/lug-out.png') center top; background-repeat:no-repeat;}
+.hdr-logot{float:left; background-color:#FFD302; width:43px; height:44px;margin-left:1px; padding-left:13px; padding-top:5px;}
+#tit{border:1px solid #8dc9e8; height:27px; margin-top:1px; margin-bottom:1px; width:236px;}
+.tit-lft{float:left; line-height:27px; }
+.tit-rht{float:left; background:url('../img/driver.png'); background-repeat:no-repeat;  height:27px;  }
+.cont{height:79px; width:118px; background-color:#24CEFF; float:left; border-right:1px solid #fff; border-bottom:1px solid #fff; color:#fff;}
+.cont_a{height:79px; width:118px; background-color:#24CEFF; float:left; border-right:1px solid #24CEFF; border-bottom:1px solid #fff; color:#fff;}
+
