@@ -14,12 +14,12 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 .hdr-logo img{padding-right:2px;}
 .hdr-ltxt{ font-size:18px; color:#005b82; border-left:1px solid #ccc; padding-left:5px;}
 .hdr-out{float:left;border:1px solid #8dc9e8; width:59px; height:47px; margin-left:1px;  text-align:center; background:url('../img/lug-out.png'); background-repeat:no-repeat;
-    background-attachment: fixed; background-position: top;   }
+     background-position: top;   }
 .hdr-out span{position:relative; top:25px; }
 .hdr-logot{float:left; background-color:#FFD302; width:43px; height:44px;margin-left:1px; padding-left:13px; padding-top:5px;}
 #tit{border:1px solid #8dc9e8; height:27px; margin-top:1px; margin-bottom:1px; width:236px;}
 .tit-lft{float:left; line-height:27px; padding-left:5px; }
-.tit-rht{float:right; background:url('../img/driver.png'); background-repeat:no-repeat;  height:27px;  background-attachment: fixed; background-position: left; }
+.tit-rht{float:right; background:url('../img/driver.png'); background-repeat:no-repeat;  height:27px;  background-position: left; }
 .tit-rht span{padding-left:25px; line-height:27px; padding-right:5px}
 #cont{pointer:cursor;}
 .cont{height:79px; width:118px; background-color:#24CEFF; float:left; border-right:1px solid #fff; border-bottom:1px solid #fff; color:#fff;}
