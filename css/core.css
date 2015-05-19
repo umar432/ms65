@@ -60,16 +60,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
     zoom: 1; height:30px;  color:#fff; font-size:16px; text-align:center;}
 
 /*Page3*/
+.main{width:238px;}
 
-.main:before {
-	width:238px;
-	position:absolute;
-	top:0px;
-	left:0px;
-	z-index:-1;
-	content:'';
-
-}
 
 .site-header-wrap {
 	margin-bottom:60px;
@@ -94,8 +86,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 /*----- Section Titles -----*/
 .accordion-section-title {
-	width:100%;
-	padding:15px;
+	width:238px;
+	padding:0px;
 	display:inline-block;
 	border-bottom:1px solid #1a1a1a;
 	background:#333;
