@@ -14,7 +14,7 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 .hdr-logo img{padding-right:2px;}
 .hdr-ltxt{ font-size:18px; color:#005b82; border-left:1px solid #ccc; padding-left:5px;}
 .hdr-out{float:left;border:1px solid #8dc9e8; width:59px; height:47px; margin-left:1px;  text-align:center; background:url('../img/lug-out.png'); background-repeat:no-repeat;
-     background-position: top;   }
+     background-position: top; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );zoom:1;  }
 .hdr-out span{position:relative; top:25px; }
 .hdr-logot{float:left; background-color:#FFD302; width:43px; height:44px;margin-left:1px; padding-left:13px; padding-top:5px;}
 #tit{border:1px solid #8dc9e8; height:27px; margin-top:1px; margin-bottom:1px; width:236px;}
@@ -25,57 +25,90 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 .cont{height:79px; width:118px; background-color:#24CEFF; float:left; border-right:1px solid #fff; border-bottom:1px solid #fff; color:#fff;}
 .cont_a{height:79px; width:118px; background-color:#24CEFF; float:left; border-right:1px solid #24CEFF; border-bottom:1px solid #fff; color:#fff;}
 .cont_o{height:79px; width:118px; background-color:#fccf03; float:left; border-right:1px solid #fff; border-bottom:1px solid #fff; color:#fff;}
+.flt{background:url('../img/airbig.png') left center;  background-repeat:no-repeat; height:50px; margin-left:10px;}
+.flttxt{font-size:15px; color:#FFF; position:relative;  top:12px; left:25px; font-family: "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif;}
+.time{text-align:right; font-size:15px; padding-right:5px; color:#000; xbackground:url('../img/Clock-24.png') right; background-repeat:no-repeat; margin-right:1px;}
+.timetxt{font-size:15px;font-family: "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif; position:relative; right:px; top:-1px;}
 
 /*Model Pop-Up Window*/
-.web_dialog_overlay
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   height: 320px;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   background: #000000;
-   opacity: .15;
-   filter: alpha(opacity=15);
-   -moz-opacity: .15;
-   z-index: 101;
-   display: none;
-}
-.web_dialog
-{
-   display: none;
-   position: absolute;
-   width: 220px;
-   height: 100px;
-   top: 50%;
-   left: 8px;
-   xmargin-left: -190px;
-   xmargin-top: -100px;
-   background-color: #ffffff;
-   border: 1px solid #00a1de;
-   padding: 0px;
-   z-index: 102;
-   font-family: Verdana;
-   font-size: 10pt;
-}
-.web_dialog_title
-{
-   padding: 10px;
-   
-}
-.web_dialog_title a
-{
-   color: White;
-   text-decoration: none;
-}
-.align_right
-{
-   text-align: right;
+.web_dialog_overlay {position: absolute; top: 0; right: 0; bottom: 0;  left: 0; height: 320px; width: 100%; background: #000000;  filter: alpha(opacity=15); z-index: 101;  display:none;}
+.web_dialog{display: none; position: absolute;width: 220px;height: 100px; top: 50%; left: 8px; background-color: #ffffff; border: 1px solid #00a1de; padding: 0px; z-index: 102; }
+.web_dialog_title{ padding: 10px;}
+
+/*Page 2*/
+.tab-d{border:1px solid #00a1de}
+.tab-d thead th { background-color:#00a1de; border-right:1px solid #fff; vertical-align:middle; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); zoom:1;}
+.tab-d thead{color:#fff;}
+.tab-d tr td{ border-bottom:1px dotted #00a1de; text-align:center; font-size:13px;font-family: "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif;  padding-top:5px; padding-bottom:3px}
+.btnarea{ margin-top:1px; border:1px solid #00a1de; width:236px;}
+.btnarealft{ float:left; height:30px; width:118px; height:30px; background-color:#ccc;}
+.btnarearht{ float:right; height:30px; width:118px; height:30px; background-color:#ff0}
+.bverify{  
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 );
+    zoom: 1; height:30px; border-left:1px solid #fff; color:#fff; font-size:16px; text-align:center;}
+.breject{  
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 );
+    zoom: 1; height:30px;  color:#fff; font-size:16px; text-align:center;}
+
+/*Page3*/
+
+.main:before {
+	width:238px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	content:'';
+
 }
 
-</style>
+.site-header-wrap {
+	margin-bottom:60px;
+	border-bottom:1px solid #cd9ad6;
+}
 
+/*------------------------------------*\
+-------- DEMO Code: accordion
+\*------------------------------------*/
+/*----- Accordion -----*/
+.accordion, .accordion * {
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+.accordion {
+	overflow:hidden;
+	
+	background:#f7f7f7;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border-bottom:1px solid #1a1a1a;
+	background:#333;
+	transition:all linear 0.15s;
+	/* Type */
+	font-size:1.200em;
+	text-shadow:0px 1px 0px #1a1a1a;
+	color:#fff;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	background:#4c4c4c;
+	/* Type */
+	text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding:15px;
+	display:none;
+}
