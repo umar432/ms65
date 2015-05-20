@@ -35,9 +35,13 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 .hact{background:#B7D967;}
 /*Model Pop-Up Window*/
 .web_dialog_overlay {position: absolute; top: 0; right: 0; bottom: 0;  left: 0; height: 320px; width: 100%; background: #000000;  filter: alpha(opacity=15); z-index: 101;  display:none;}
-.web_dialog{display: none; position: absolute;width: 220px;height: 100px; xtop: 50%; left: 8px; background-color: #ffffff; border: 1px solid #00a1de; padding: 0px; z-index: 102; }
+.web_dialog{display: none; position: absolute;width: 220px;height: 100px; top: 50px; left: 8px; background-color: #ffffff; border: 1px solid #00a1de; padding: 0px; z-index: 102; }
 .web_dialog_title{ padding: 10px;}
 
+.web_dialogE{display: none; position: absolute;width: 220px;top: 10px; left: 8px; background-color: #ffffff; border: 1px solid #00a1de; padding: 0px; z-index: 102;}
+.web_H{font-size:15px; border-bottom:1px solid #ccc; height:20px; padding:5px;}
+.web_Hlft{float:left; width:170px;}
+.web_Hrht{  float:right; width:20px; background:url("../img/close.png") ; background-repeat:no-repeat;}
 /*Page 2*/
 .tab-d{border:1px solid #00a1de}
 .tab-d thead th { background:url('../img/blu-bg.jpg'); background-repeat:repeat-x; border-right:1px solid #fff; vertical-align:middle; }
@@ -45,11 +49,13 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 .tab-d thead{color:#fff;}
 .tab-d tr td{ border-bottom:1px dotted #00a1de; text-align:center; font-size:13px;font-family: "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif;  padding-top:5px; padding-bottom:3px}
 .btnarea{ margin-top:1px; border:1px solid #00a1de; width:236px;}
-.btnarealft{ float:left; height:30px; width:118px; height:30px; background-color:#ccc;}
-.btnarearht{ float:right; height:30px; width:118px; height:30px; background-color:#ff0}
-.bverify{ height:30px; border-left:1px solid #fff; color:#fff; font-size:16px; text-align:center; background:url('../img/blu-g.jpg'); background-repeat:repeat-x;}
-.breject{ height:30px; color:#fff; font-size:16px; text-align:center; background:url('../img/orn-g.jpg'); background-repeat:repeat-x;}
-
+.btnarealft{ float:left; height:30px; width:98px; height:30px; background-color:#ccc;}
+.btnareacen{width:39px; float:left; border-left:1px solid #ad0c27; height:30px; background:url('../img/grn-g.jpg'); background-repeat:repeat-x;}
+.btnareacen img{position:relative; left:10px; top:5px;}
+.btnarearht{ float:right; height:30px; width:98px; height:30px; background-color:#ff0}
+.bverify{ height:30px; border-left:1px solid #00a1de; color:#fff; font-size:16px; text-align:center; background:url('../img/blu-g.jpg'); background-repeat:repeat-x;}
+.breject{ height:30px; color:#fff; font-size:16px; text-align:center; background:url('../img/orn-g.jpg') ; background-repeat:repeat-x;}
+.bdr{ border:1px solid #00a1de; margin-bottom:2px;}
 /*Page3*/
 
 .main{width:238px;}
