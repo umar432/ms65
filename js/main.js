@@ -3,7 +3,7 @@ $(document).ready(function()
 	$('.hdr-logo').click(function(e) { window.location.href = "index.html";});
 	$('#home').click(function(e) {jQuery(this).addClass('hact'); window.location.href = "page3.html";});
 	$('#btnR').click(function(e) { window.location.href = "index.html";});
-	$('#btnV').click(function(e) { window.location.href = "page3.html";});
+	$('#btnV').click(function(e) { window.location.href = "page4.html";});
 	$(".tab-er").click(function (e)  {  ShowDialogEr(false); e.preventDefault();  });
 	$(".web_Hrht").click(function (e) { HideDialog(); e.preventDefault();  });
    
@@ -49,6 +49,14 @@ $(document).ready(function()
 
 		e.preventDefault();
 	});
+	
+	
+	$('#btnD').click(function() { 
+	var colors = [];
+ 	$('#mcon').find(':checkbox:checked').each(function(i){ colors[i] = $(this).val(); $('#'+$(this).val()).hide();  });
+	
+    return false;
+   });
 	
 });
 
