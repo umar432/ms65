@@ -63,15 +63,30 @@
 	<!--Button Start -->
 	<div class="btnarea">
 		<div class="btnarealft">
-		<div class="breject">Reject</div>
+		<div id="btnR" class="breject">Reject</div>
 		</div>
 		<div class="btnarearht">
-		<div class="bverify">Verify</div>
+		<div id="btnV" class="bverify">Verify</div>
 		</div>
 	</div>
 	<div class="clear"></div>
 	<!--Button End-->
 	</div><!--Content End-->
+	<!--Model Window Pop-Up Start -->
+	<div id="output"></div>
+    <div id="overlay" class="web_dialog_overlay"></div>
+	<div id="dialog" class="web_dialog">
+		<div class="web_dialog_title">
+		Are you sure you want to do that?
+		<div style="margin-top:10px; text-align:right;">
+			<input id="btnClose" type="button" value="CANCEL" style="height:30px; width:80px; background-color:#00a1de; border:1px solid #ccc; color:#fff;"/>
+			<input id="btnSubmit" type="button" value="OK" style="height:30px; width:50px; background-color:#00a1de; border:1px solid #ccc; color:#fff;"/>
+		</div>
+		
+		</div>
+		
+	
+	<!--Model Window Pop-Up End -->
 </div><!--Main Container End-->
 </body>
 </html>
