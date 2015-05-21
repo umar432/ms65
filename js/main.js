@@ -1,13 +1,13 @@
 $(document).ready(function() 
 {
-	$('#gc').click(function(e) { window.location.href = "index.html";});
+	$('#gc').click(function(e) { $(this).addClass('grn');window.location.href = "index.html";});
 	$('#eps').click(function(e) { window.location.href = "eps-index.html";});
-	$('.hdr-logo').click(function(e) { window.location.href = "index.html";});
-	$('#home').click(function(e) {jQuery(this).addClass('hact'); window.location.href = "gc-ride.html";});
-	$('#home1').click(function(e) {jQuery(this).addClass('hact'); window.location.href = "eps-ride.html";});
-	$('#btnR').click(function(e) { window.location.href = "index.html";});
-	$('#btnV').click(function(e) { window.location.href = "gc-de.html";});
-	$('#btnV1').click(function(e) { window.location.href = "eps-de.html";});
+	$('.hdr-logo').click(function(e) { window.location.href = "page5.html";});
+	$('#home').click(function(e) {$(this).addClass('grn'); window.location.href = "gc-ride.html";});
+	$('#home1').click(function(e) {$(this).addClass('grn');window.location.href = "eps-ride.html";});
+	$('#btnR').click(function(e) { $(this).addClass('orn');window.location.href = "index.html";});
+	$('#btnV').click(function(e) {$(this).addClass('grn'); window.location.href = "gc-de.html";});
+	$('#btnV1').click(function(e) { $(this).addClass('grn');window.location.href = "eps-de.html";});
 	$(".tab-er").click(function (e)  {  ShowDialogEr(false); e.preventDefault(); $(this).parent().addClass("strikeout");  });
 	$(".web_Hrht").click(function (e) { HideDialog(); e.preventDefault();  });
 	$("#n").click(function (e) { HideDialog(); e.preventDefault();  });

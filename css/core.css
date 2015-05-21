@@ -82,10 +82,10 @@ background:url('../img/blu-bg.jpg'); background-repeat:repeat-x;}
 .hdr-ltxt-l{ font-size:18px; color:#005b82; border-left:1px solid #ccc; padding-left:5px;}
 .hdr-wel{padding-top:5px; text-align:right; font-size:13px;}
 .hdr-st{padding-top:5px;  font-size:15px; color:#005b82; font-weight:bold; margin-bottom:10px;}
-.hdr-bl-btn{height:30px; color:#fff; background-color:#8dc9e8;  background:url('../img/blu-bg.jpg'); background-repeat:repeat-x; margin-bottom:10px;border:1px solid #8dc9e8; text-align:center; font-size:15px; }
+.hdr-bl-btn{height:30px; color:#fff;  background:url('../img/blu-bg.jpg'); background-repeat:repeat-x; margin-bottom:10px;border:1px solid #8dc9e8; text-align:center; font-size:15px; }
 
-.grn{ background-color:#c9db4f;}
-.blu{ background-color:#24ceff;}
-.orn{background-color:#fccf03}
-.red{background-color:#e64935;}
+.grn{ background:#c9db4f !important;}
+.blu{ background:#24ceff!important;}
+.orn{background:#fccf03 !important;}
+.red{background:#e64935 !important;}
 .strikeout{text-decoration: line-through;}
