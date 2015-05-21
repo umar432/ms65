@@ -29,6 +29,7 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 .cont_a{height:79px; width:118px; background-color:#24CEFF; float:left; border-right:1px solid #24CEFF; border-bottom:1px solid #fff; color:#fff;}
 .cont_o{height:79px; width:118px; background-color:#fccf03; float:left; border-right:1px solid #fff; border-bottom:1px solid #fff; color:#fff;}
 .flt{background:url('../img/airbig.png') left center;  background-repeat:no-repeat; height:50px; margin-left:10px;}
+.flt1{background:url('../img/airbig_1.png') left center;  background-repeat:no-repeat; height:50px; margin-left:10px;}
 .flttxt{font-size:15px; color:#FFF; position:relative;  top:12px; left:25px; font-family: "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif;}
 .time{text-align:right; font-size:15px; padding-right:5px; color:#000; xbackground:url('../img/Clock-24.png') right; background-repeat:no-repeat; margin-right:1px;}
 .timetxt{font-size:15px;font-family: "Lucida Grande","Lucida Sans Unicode","Helvetica Neue","Helvetica",verdana,arial,sans-serif; position:relative; right:px; top:-1px;}
@@ -63,53 +64,28 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 .tab-aB tr td { padding:5px; border-bottom:1px dotted #8dc9e8;}
 .tab-er{border-right:1px solid #ccc;border-bottom:1px solid #ccc; width:30px;}
 .tab-er img{ margin-left:5px;}
-
-.site-header-wrap {
-	margin-bottom:60px;
-	border-bottom:1px solid #cd9ad6;
-}
-
-/*------------------------------------*\
--------- DEMO Code: accordion
-\*------------------------------------*/
-/*----- Accordion -----*/
-.accordion, .accordion * {
-	-webkit-box-sizing:border-box; 
-	-moz-box-sizing:border-box; 
-	box-sizing:border-box;
-}
-
-.accordion {
-	
-	border:1px solid #8dc9e8 ;
-	border-top:0px;
-	
-}
-
-/*----- Section Titles -----*/
+.site-header-wrap {	margin-bottom:60px;	border-bottom:1px solid #cd9ad6;}
+.accordion, .accordion * {	-webkit-box-sizing:border-box; 	-moz-box-sizing:border-box; 	box-sizing:border-box;}
+.accordion {	border:1px solid #8dc9e8 ;border-top:0px;}
 .accordion-section-title { width:205px;color:#fff;float:left; background-color:#00a1de; height:24px; border-top:1px solid #8dc9e8 ; font-size:15px; padding:3px;
 background:url('../img/blu-bg.jpg'); background-repeat:repeat-x;}
-.accordion-check
-{ float:right;
- width:24px;
- border-top:1px solid #8dc9e8; border-left:1px solid #fff;
-height:30px;
- background:url('../img/blu-bg.jpg'); background-repeat:repeat-x;
-}
-.accordion-check input{ width:20px;}
-.accordion-section-title.active, .accordion-section-title:hover {
-	background:#B7D967;
-	/* Type */
-	text-decoration:none;
-}
+.accordion-check { float:right; width:24px; border-top:1px solid #8dc9e8; border-left:1px solid #fff; height:30px; background:url('../img/blu-bg.jpg'); background-repeat:repeat-x; }
+.accordion-section-title.active, .accordion-section-title:hover {background:#B7D967;	text-decoration:none;}
+.accordion-section:last-child .accordion-section-title {	border-bottom:none;}
+.accordion-section-content {	border-bottom:1px solid #8dc9e8;display:none;}
 
-.accordion-section:last-child .accordion-section-title {
-	border-bottom:none;
-}
+/*Login*/
+.hdr-bdr{border:1px solid #8dc9e8; height:320px; padding:10px;}
+.hdr-bdr-l{border-bottom:1px solid #8dc9e8; height:50px}
+.hdr-logo-l{ float:left;width:109px; height:42px; padding-top:5px; padding-left:8px;}
+.hdr-logo-l img{padding-right:2px;}
+.hdr-ltxt-l{ font-size:18px; color:#005b82; border-left:1px solid #ccc; padding-left:5px;}
+.hdr-wel{padding-top:5px; text-align:right; font-size:13px;}
+.hdr-st{padding-top:5px;  font-size:15px; color:#005b82; font-weight:bold; margin-bottom:10px;}
+.hdr-bl-btn{height:30px; color:#fff; background-color:#8dc9e8;  background:url('../img/blu-bg.jpg'); background-repeat:repeat-x; margin-bottom:10px;border:1px solid #8dc9e8; text-align:center; font-size:15px; }
 
-/*----- Section Content -----*/
-.accordion-section-content {
-	border-bottom:1px solid #8dc9e8;
-	
-	display:none;
-}
+.grn{ background-color:#c9db4f;}
+.blu{ background-color:#24ceff;}
+.orn{background-color:#fccf03}
+.red{background-color:#e64935;}
+.strikeout{text-decoration: line-through;}

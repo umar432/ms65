@@ -1,12 +1,20 @@
 $(document).ready(function() 
 {
+	$('#gc').click(function(e) { window.location.href = "index.html";});
+	$('#eps').click(function(e) { window.location.href = "eps-index.html";});
 	$('.hdr-logo').click(function(e) { window.location.href = "index.html";});
-	$('#home').click(function(e) {jQuery(this).addClass('hact'); window.location.href = "page3.html";});
+	$('#home').click(function(e) {jQuery(this).addClass('hact'); window.location.href = "gc-ride.html";});
+	$('#home1').click(function(e) {jQuery(this).addClass('hact'); window.location.href = "eps-ride.html";});
 	$('#btnR').click(function(e) { window.location.href = "index.html";});
-	$('#btnV').click(function(e) { window.location.href = "page4.html";});
-	$(".tab-er").click(function (e)  {  ShowDialogEr(false); e.preventDefault();  });
+	$('#btnV').click(function(e) { window.location.href = "gc-de.html";});
+	$('#btnV1').click(function(e) { window.location.href = "eps-de.html";});
+	$(".tab-er").click(function (e)  {  ShowDialogEr(false); e.preventDefault(); $(this).parent().addClass("strikeout");  });
 	$(".web_Hrht").click(function (e) { HideDialog(); e.preventDefault();  });
-   
+	$("#n").click(function (e) { HideDialog(); e.preventDefault();  });
+	$('.btnareacen').click(function() {
+    location.reload();
+});
+
 	
 	
 	$("#btnShowSimple").click(function (e)  {  ShowDialog(false); e.preventDefault();  });
@@ -51,12 +59,57 @@ $(document).ready(function()
 	});
 	
 	
-	$('#btnD').click(function() { 
-	var colors = [];
- 	$('#mcon').find(':checkbox:checked').each(function(i){ colors[i] = $(this).val(); $('#'+$(this).val()).hide();  });
-	
-    return false;
+	$('#btnD').click(function() 
+	{ 
+		var colors = [];
+		$('#mcon').find(':checkbox:checked').each(function(i){ colors[i] = $(this).val();  $('#'+$(this).val()).hide();  });
+	    return false;
    });
+   
+	$('#ver input[type="checkbox"]').click(function(){
+            if($(this).is(":checked"))
+			{
+                val = $(this).val();
+				
+				if (val=="sec1")
+				{
+					$('#accordion-1 table').addClass('grn');
+					$('#accordion-1 table td:first-child').css('background-color','#FFF');
+				}
+				
+				else if (val=="sec2")
+				{
+					$('#accordion-2 table').addClass('grn');
+					$('#accordion-2 table td:first-child').css('background-color','#FFF');
+					
+				}
+				else if(val=="sec3")
+				{
+					$('#accordion-3 table').addClass('grn');
+					$('#accordion-3 table td:first-child').css('background-color','#FFF');
+					
+				}
+				
+            }
+            else if($(this).is(":not(:checked)"))
+			{
+                val = $(this).val();
+				if (val=="sec1")
+				{
+					$('#accordion-1 table').removeClass('grn');
+				}
+				else if(val=="sec2")
+				{
+					$('#accordion-2 table').removeClass('grn');
+					
+				}
+				else if(val=="sec3")
+				{
+					$('#accordion-3 table').removeClass('grn');
+					
+				}
+            }
+        });
 	
 });
 
@@ -69,10 +122,20 @@ function ShowDialog(modal)  {   $("#overlay").show();   $("#dialog").fadeIn(300)
 
    function HideDialog() { $("#overlay").hide(); $("#dialog").fadeOut(300);  } 
    
-function ShowDialogEr(modal)  {   $("#overlay").show();   $("#dailogEr").fadeIn(300);
-
-      if (modal) { $("#overlay").unbind("click");  }
-      else { $("#overlay").click(function (e) { HideDialog(); });
+function ShowDialogEr(modal)  
+{ 
+		
+		$("#overlay").show();   
+		$("#dailogEr").fadeIn(300);
+		
+		if (modal) 
+		{ 
+			$("#overlay").unbind("click");  
+		}
+		else { $("#overlay").click(function (e) 
+		{ 
+			HideDialog(); 
+		});
       }
    }
 
