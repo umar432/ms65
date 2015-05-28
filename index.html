@@ -8,51 +8,56 @@
   <script type="text/JavaScript" src="js/main.js" type="text/"></script>
 </head>
 <body>
-<div id="mcon">
-	<div id="hdr">
-	<div class="hdr-logo"><img src="img/logo.jpg" width="56px" height="32px"/>
-	<span class="hdr-ltxt">RTP</span>
+<div id="layout-width">
+	<div id="klm-hdr">
+	<div class="klm-hdr-logo"><img src="img/logo.jpg" width="56px" height="32px"/>
+	<span class="klm-hdr-rtp-logo">RTP</span>
 	</div>
-	<div class="hdr-out"><span>Dir:Out</span></div>
-	<div class="hdr-logot" id="btnShowSimple"><img src="img/lock.png" width="32px" height="32px"/></div>
+	<div class="hdr-dir-out"><span>Dir:Out</span></div>
+	<div class="hdr-logout" id="btn-logout"><img src="img/lock.png" width="32px" height="32px"/></div>
 	</div><!--Header Layout End-->
 	<div class="clear"></div>
-	<div id="tit">
-	<div class="tit-lft">Pick Ride</div>
-	<div class="tit-rht"><span>X079152</span></div>
+	<div id="rtp-title">
+	<div class="rtp-title-lft">Pick Ride</div>
+	<div class="rtp-title-rht"><span>X079152</span></div>
 	</div><!--Title Layer End-->
 	<div class="clear"></div>
-	<div id="cont">
-		<div id="home">
-		<div class="cont" style="background-color:#e64935;">
-			<div  class="flt" ><span class="flttxt">&nbsp;0KL 01263</span></div>
-			<div class="time"><span class="timetxt">09:35</span></div>
-		<div class="clear"></div>
+	<div id="layout-tile">
+		<div id="tile">
+		<div class="tile-lft red"> 
+			<div  class="tile-flight"  ><span class="tile-flight-txt">KL 01263</span></div>
+			<div class="tile-time"><span class="tile-time-txt">09:35</span></div>
+			<div class="clear"></div>
 		<!--Display 1-->
 		</div>
-		<div class="cont_a" style="background-color:#e64935;">
-			<div  class="flt1"><span class="flttxt">&nbsp;0KL 01373</span></div>
-			<div class="time"><span class="timetxt">09:25</span></div>
+		<div class="tile-rht red">
+			<div  class="tile-flight-combo"><span class="tile-flight-txt">KL 01373</span></div>
+			<div class="tile-time"><span class="tile-time-txt">09:25</span></div>
+		<div class="clear"></div>
 		<!--Display 2-->
 		</div>
-		<div class="cont" style="background-color:#fccf03">
-			<div  class="flt"><span class="flttxt">&nbsp;0KL 01473</span></div>
-			<div class="time"><span class="timetxt">10:00</span></div>
+		<div class="tile-lft orn">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01473</span></div>
+			<div class="tile-time"><span class="tile-time-txt">10:00</span></div>
+			<div class="clear"></div>
 		<!--Display 3-->
 		</div>
-		<div class="cont_a"  style="background-color:#fccf03">
-			<div  class="flt"><span class="flttxt">&nbsp;0KL 01701</span></div>
-			<div class="time"><span class="timetxt">09:30</span></div>
+		<div class="tile-rht ">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01701</span></div>
+			<div class="tile-time"><span class="tile-time-txt">09:30</span></div>
+			<div class="clear"></div>
 		<!--Display 4-->
 		</div>
-		<div class="cont">
-			<div  class="flt"><span class="flttxt">&nbsp;0KL 01723</span></div>
-			<div class="time"><span class="timetxt">09:15</span></div>
+		<div class="tile-lft">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01723</span></div>
+			<div class="tile-time"><span class="tile-time-txt">09:15</span></div>
+			<div class="clear"></div>
 		<!--Display 5-->
 		</div>
-		<div class="cont_a">
-			<div  class="flt"><span class="flttxt">&nbsp;0KL 01927</span></div>
-			<div class="time"><span class="timetxt">09:40</span></div>
+		<div class="tile-rht">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01927</span></div>
+			<div class="tile-time"><span class="tile-time-txt">09:40</span></div>
+			<div class="clear"></div>
 		<!--Display 6-->
 		</div>
 	</div>
@@ -61,11 +66,11 @@
 	<div id="output"></div>
     <div id="overlay" class="web_dialog_overlay"></div>
 	<div id="dialog" class="web_dialog">
-		<div class="web_dialog_title">
-		Are you sure you want to do that?
-		<div style="margin-top:10px; text-align:right;">
-			<input id="btnClose" type="button" value="CANCEL" style="height:30px; width:80px; background-color:#00a1de; border:1px solid #ccc; color:#fff;"/>
-			<input id="btnSubmit" type="button" value="OK" style="height:30px; width:50px; background-color:#00a1de; border:1px solid #ccc; color:#fff;"/>
+	<div class="web_dialog_title">Are you sure you want to do that?</div>
+	
+		<div class="inWlbnr">
+			<input id="btn-cancel" type="button" value="CANCEL" class="btnblu"/>
+			<input id="btn-ok" type="button" value="OK" class="btnblu"/>
 		</div>
 		
 		</div>

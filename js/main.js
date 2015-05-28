@@ -1,35 +1,65 @@
-$(document).ready(function() 
+$(document).ready(function()
 {
-	$('#gc').click(function(e) { $(this).addClass('grn');window.location.href = "index.html";});
-	$('#eps').click(function(e) { window.location.href = "eps-index.html";});
-	$('.hdr-logo').click(function(e) { window.location.href = "page5.html";});
-	$('#home').click(function(e) {$(this).addClass('grn'); window.location.href = "gc-ride.html";});
-	$('#home1').click(function(e) {$(this).addClass('grn');window.location.href = "eps-ride.html";});
-	$('#btnR').click(function(e) { $(this).addClass('orn');window.location.href = "index.html";});
-	$('#btnV').click(function(e) {$(this).addClass('grn'); window.location.href = "gc-de.html";});
-	$('#btnV1').click(function(e) { $(this).addClass('grn');window.location.href = "eps-de.html";});
-	$(".tab-er").click(function (e)  {  ShowDialogEr(false); e.preventDefault(); $(this).parent().addClass("strikeout");  });
-	$(".web_Hrht").click(function (e) { HideDialog(); e.preventDefault();  });
-	$("#n").click(function (e) { HideDialog(); e.preventDefault();  });
-	$('.btnareacen').click(function() {
+	/*Date*/
+	$("#rtp-cargo-year").text((new Date).getFullYear() );
+	$(".klm-hdr-logo").click(function () { location.href('welcome.html')});
+	/*Welcome Page*/
+	$('#btn-gc').click(function () { $(this).addClass('grn'); location.href('index.html')});
+	$('#btn-xps').click(function() { $(this).addClass('grn');location.href('index.html')});	
+		
+	/*Index Page*/
+	/*Logout Model Window */
+	$("#btn-logout").click(function (e) { $(this).addClass('grn'); $('#btn-cancel').removeClass('grn'); ShowDialog(true); e.preventDefault();  });/*Open Model Window*/
+	$("#btn-ok").click(function (e) {$(this).addClass('grn');location.href('welcome.html')});/*redirect to welcome page*/
+	$("#btn-cancel").click(function (e) {$('#btn-logout').removeClass('grn');  HideDialog(); e.preventDefault(); });/*hide model window*/
+	
+	
+	$('#tile').click(function() { $(this).addClass('grn');location.href('ride.html')});
+	
+	$('#error').click(function (e) { HideDialog(); e.preventDefault();  });
+	$('#btn-delivery').click(function() 
+	{ 
+		var colors = [];
+		$('#layout-tile').find(':checkbox:checked').each(function(i){ colors[i] = $(this).val();  $('#'+$(this).val()).hide();  });
+	    return false;
+   });
+
+	$('#btn-reload').click(function() {
     location.reload();
 });
 
 	
+	$('#btn-reject').click(function() 
+	{ 
+		
+		$(this).addClass('grn');location.href('index.html')}
+	);
 	
-	$("#btnShowSimple").click(function (e)  {  ShowDialog(false); e.preventDefault();  });
-    $("#btnShowModal").click(function (e)  { ShowDialog(true);  e.preventDefault();   });
-    $("#btnClose").click(function (e) { HideDialog(); e.preventDefault();  });
-    $("#btnSubmit").click(function (e)
-      {
-         /*var brand = $("#brands input:radio:checked").val();
-         $("#output").html("<b>Your favorite mobile brand: </b>" + brand);*/
-		 window.location.href = "login.html";
-         HideDialog();
-         e.preventDefault();
-      });
-	  
-	  
+	$('#btn-verify').click(function() 
+	{ 
+		
+		$(this).addClass('grn');location.href('delivery.html')}
+	);
+	
+	
+	$(".accordion-error-report").click(function (e)  { ShowDialogEr(false); e.preventDefault(); $(this).parent().addClass("strikeout");  });
+	$(".web-btn-close").click(function (e) { HideDialog(); e.preventDefault();  });
+	
+	
+	/*Select Single Row in the Accordoin*/
+	$('.accordion-content-table td:nth-child(2)').click(function() 
+	{ 
+		 $(this).toggleClass("grn");
+		 $(this).next().toggleClass("grn");
+		
+	});
+	$('.accordion-content-table td:nth-child(3)').click(function() 
+		{ 
+		 $(this).toggleClass("grn");
+		 $(this).prev().toggleClass("grn");
+	});
+
+	/*Accordion Start*/
 	function close_accordion_section()
 	{
 		
@@ -44,10 +74,11 @@ $(document).ready(function()
 		if(jQuery('.accordion-section-title').is('.active')) 
 		{
 			close_accordion_section();
-			
+			jQuery(this).addClass('active');
+			jQuery('.accordion ' + currentAttrValue).slideDown(100).addClass('open'); 
 		}else {
+			
 			close_accordion_section();
-
 			// Add active class to section title
 			jQuery(this).addClass('active');
 			// Open up the hidden content panel
@@ -57,16 +88,13 @@ $(document).ready(function()
 
 		e.preventDefault();
 	});
+	/*Accordion End*/
 	
 	
-	$('#btnD').click(function() 
-	{ 
-		var colors = [];
-		$('#mcon').find(':checkbox:checked').each(function(i){ colors[i] = $(this).val();  $('#'+$(this).val()).hide();  });
-	    return false;
-   });
-   
-	$('#ver input[type="checkbox"]').click(function(){
+	/*Accordoin Select All*/
+	
+	
+	$('#ride input[type="checkbox"]').click(function(){
             if($(this).is(":checked"))
 			{
                 val = $(this).val();
@@ -110,33 +138,14 @@ $(document).ready(function()
 				}
             }
         });
-	
 });
-
-function ShowDialog(modal)  {   $("#overlay").show();   $("#dialog").fadeIn(300);
-
-      if (modal) { $("#overlay").unbind("click");  }
-      else { $("#overlay").click(function (e) { HideDialog(); });
-      }
-   }
-
-   function HideDialog() { $("#overlay").hide(); $("#dialog").fadeOut(300);  } 
-   
-function ShowDialogEr(modal)  
+/*Model Window Function*/
+function ShowDialog(modal) 
+{ 	$("#overlay").show(); $("#dialog").fadeIn(300); 
+	if (modal) { $("#overlay").unbind("click");} 
+	else { $("#overlay").click(function (e) { HideDialog();});}
+}
+function HideDialog() 
 { 
-		
-		$("#overlay").show();   
-		$("#dailogEr").fadeIn(300);
-		
-		if (modal) 
-		{ 
-			$("#overlay").unbind("click");  
-		}
-		else { $("#overlay").click(function (e) 
-		{ 
-			HideDialog(); 
-		});
-      }
-   }
-
-   function HideDialog() { $("#overlay").hide(); $("#dailogEr").fadeOut(300);  } 
+$("#overlay").hide(); $("#dialog").fadeOut(300); 
+}
