@@ -1,1 +1,127 @@
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd"><html><head> <meta name="mobileoptimized" content="240"> <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"> <link rel="stylesheet" href="css/core.css"/> <script type="text/JavaScript" src="js/jquery.min.js"></script> <script type="text/JavaScript">$.ajax({type: "GET", url: "js/main.js", success: function(){}, dataType: "script", cache: true});</script></head><body><div id="layout-width"><div id="klm-hdr"><div class="klm-hdr-logo"><img src="img/logo.jpg" width="56px" height="32px"/><span class="klm-hdr-rtp-logo">RTP</span></div><div class="hdr-dir-in"><span>Dir:IN</span></div><div class="hdr-logout" id="btn-logout"><img src="img/lock.png" width="32px" height="32px"/></div></div><div class="clear"></div><div id="rtp-title"><div class="rtp-title-lft">In Delivery</div><div class="rtp-title-rht"><span>X079152</span></div></div><div class="clear"></div><div id="layout-tile"><div class="main" id="in-ride"><div id="dir-in-layout-deli"><table cellspacing="0" cellpadding="0" width="100%"><tr><td>KL 01263</td><td>PMC 12345 KL</td><td>C</td><td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td></tr><tr><td>KL 01263</td><td>PMC 45678 KL</td><td>M</td><td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td></tr><tr><td>KL 01373</td><td>B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KL</td><td>C</td><td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td></tr><tr><td>KL 01473</td><td>PMC 12345 KL</td><td>M</td><td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td></tr><tr><td>KL 01473</td><td>TMC 12345 KL</td><td>M</td><td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td></tr><tr><td>KL 01701</td><td>B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KL</td><td>M</td><td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td></tr><tr><td>KL 01723</td><td>B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KL</td><td>M</td><td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td></tr></table></div><div class="btn-area"><div class="btn-area-lft"><div id="btn-reject" class="btn-reject">Reject</div></div><div id="btn-reload" class="btn-area-cen"><img src="img/restart.png" width="20px" height="20px"></div><div class="btn-area-rht"><div id="btn-done" class="btn-verify">Done</div></div></div><div class="clear"></div></div></div></div><div id="output"></div><div id="overlay" class="web_dialog_overlay"></div><div id="dialog" class="web_dialog"><div class="web_dialog_title">Are you sure you want to do that?</div><div class="inWlbnr"><input id="btn-cancel" type="button" value="CANCEL" class="btnblu"/><input id="btn-ok" type="button" value="OK" class="btnblu"/></div></div><div id="dailog_error-report" class="web_dialog-error"><div class="web_dailog_hdr"><div class="web_dailog_hdr-lft">Report Problem</div><div class="web-btn-close"> </div></div><div class="clear"></div><div style="font-size:15px; text-align:center;">PMC 12345</div><div style="padding:5px;" id="error"><div id="btn-damaged-uld" class="klm-blu-btn">DAMAGED ULD</div><div id="btn-diff-uld" class="klm-blu-btn">DIFFERENT ULD</div><div id="btn-uitzakker" class="klm-blu-btn">UITZAKKER</div><div id="btn-faculty-meterial" class="klm-blu-btn">FACULTY MATERIAL</div><div id="btn-faculty-uld" class="klm-blu-btn">UNKNOWN ULD</div></div></div></div></body></html>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html>
+<head>
+  <meta name="mobileoptimized" content="240"> 
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/core.css" />
+  <script type="text/JavaScript" src="js/jquery.min.js"></script>
+  <script type="text/JavaScript">$.ajax({ type: "GET",  url: "js/main.js",  success: function(){}, dataType: "script",  cache: true	});</script>
+</head>
+<body>
+<div id="layout-width">
+	<div id="klm-hdr">
+	<div class="klm-hdr-logo"><img src="img/logo.jpg" width="56px" height="32px"/>
+	<span class="klm-hdr-rtp-logo">RTP</span>
+	</div>
+	<div class="hdr-dir-in"><span>Dir:IN</span></div>
+	<div class="hdr-logout" id="btn-logout"><img src="img/lock.png" width="32px" height="32px"/></div>
+	</div><!--Header Layout End-->
+	<div class="clear"></div>
+	<div id="rtp-title">
+	<div class="rtp-title-lft">In Delivery</div>
+	<div class="rtp-title-rht"><span>X079152</span></div>
+	</div><!--Title Layer End-->
+	<div class="clear"></div>
+	<div id="layout-tile">
+	<div class="main" id="in-ride">
+	<div id="dir-in-layout-deli">
+	<!-- Normal ULD's Start-->
+	
+	<table cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td>KL 01263</td>
+		<td>PMC 12345 KL</td>
+		<td>C</td>
+		<td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td>
+	</tr>
+	<tr>
+		<td>KL 01263</td>
+		<td>PMC 45678 KL</td>
+		<td>M</td>
+		<td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td>
+	</tr>
+<tr>
+		<td>KL 01373</td>
+		<td>B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KL</td>
+		<td>C</td>
+		<td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td>
+	</tr>
+	<tr>
+		<td>KL 01473</td>
+		<td>PMC 12345 KL</td>
+		<td>M</td>
+		<td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td>
+	</tr>
+	<tr>
+		<td>KL 01473</td>
+		<td>TMC 12345 KL</td>
+		<td>M</td>
+		<td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td>
+	</tr>
+	<tr>
+		<td>KL 01701</td>
+		<td>B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KL</td>
+		<td>M</td>
+		<td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td>
+	</tr>
+	<tr>
+		<td>KL 01723</td>
+		<td>B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KL</td>
+		<td>M</td>
+		<td>AH&nbsp;<input type="text" style="width:30px; height:15px"/></td>
+	</tr>
+	</table>
+	<!-- Normal ULD's End-->
+	
+	</div>
+	<!--Button Start -->
+	<div class="btn-area">
+		<div class="btn-area-lft">
+		<div id="btn-reject" class="btn-reject">Reject</div>
+		</div>
+		<div id="btn-reload" class="btn-area-cen"><img src="img/restart.png" width="20px" height="20px"></div>
+		<div class="btn-area-rht">
+		<div id="btn-done" class="btn-verify">Done</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<!--Button End-->
+	</div><!--Content End-->	
+	</div>
+	</div><!--Content End-->
+	<!--Model Window Pop-Up Start -->
+	<div id="output"></div>
+    <div id="overlay" class="web_dialog_overlay"></div>
+	<div id="dialog" class="web_dialog">
+	<div class="web_dialog_title">Are you sure you want to do that?</div>
+	
+		<div class="inWlbnr">
+			<input id="btn-cancel" type="button" value="CANCEL" class="btnblu"/>
+			<input id="btn-ok" type="button" value="OK" class="btnblu"/>
+		</div>
+		
+		</div>
+		
+	<!-- Model Window for Error Report Start -->	
+	<div id="dailog_error-report" class="web_dialog-error">
+	
+	<div class="web_dailog_hdr">
+		<div class="web_dailog_hdr-lft">Report Problem</div>
+		<div class="web-btn-close"> </div>
+	</div>
+	<div class="clear"></div>
+	<div style="font-size:15px; text-align:center;">PMC 12345</div>
+	<div style="padding:5px;" id="error">
+		<div id="btn-damaged-uld" class="klm-blu-btn">DAMAGED ULD</div>
+		<div id="btn-diff-uld" class="klm-blu-btn">DIFFERENT ULD</div>
+		<div id="btn-uitzakker" class="klm-blu-btn">UITZAKKER</div>
+		<div id="btn-faculty-meterial" class="klm-blu-btn">FACULTY MATERIAL</div>
+		<div id="btn-faculty-uld" class="klm-blu-btn">UNKNOWN ULD</div>
+	</div>
+	</div>
+	<!-- Model Window for Error Report End-->
+	<!--Model Window Pop-Up End -->
+</div><!--Main Container End-->
+
+</body>
+</html>

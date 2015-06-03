@@ -1,1 +1,85 @@
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd"><html><head> <meta name="mobileoptimized" content="240"> <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"> <link rel="stylesheet" href="css/core.css"/> <script type="text/JavaScript" src="js/jquery.min.js"></script> <script type="text/JavaScript">$.ajax({type: "GET", url: "js/main.js", success: function(){}, dataType: "script", cache: true});</script></head><body><div id="layout-width"><div id="klm-hdr"><div class="klm-hdr-logo"><img src="img/logo.jpg" width="56px" height="32px"/><span class="klm-hdr-rtp-logo">RTP</span></div><div class="hdr-dir-in"><span>Dir:IN</span></div><div class="hdr-logout" id="btn-logout"><img src="img/lock.png" width="32px" height="32px"/></div></div><div class="clear"></div><div id="rtp-title"><div class="rtp-title-lft">Pick Ride</div><div class="rtp-title-rht"><span>X079152</span></div></div><div class="clear"></div><div id="layout-tile_in"><div id="tile"><div class="tile-lft red" id="id1"> <div class="tile-flight" ><span class="tile-flight-txt">KL 01263</span></div><div class="tile-time"><span class="tile-time-txt">09:00</span></div><div class="clear"></div></div><div class="tile-rht red" id="id2"><div class="tile-flight"><span class="tile-flight-txt">KL 01373</span></div><div class="tile-time"><span class="tile-time-txt">09:25</span></div><div class="clear"></div></div><div class="tile-lft orn" id="id3"><div class="tile-flight"><span class="tile-flight-txt">KL 01473</span></div><div class="tile-time"><span class="tile-time-txt">10:00</span></div><div class="clear"></div></div><div class="tile-rht " id="id4"><div class="tile-flight"><span class="tile-flight-txt">KL 01701</span></div><div class="tile-time"><span class="tile-time-txt">11:30</span></div><div class="clear"></div></div><div class="tile-lft" id="id5"><div class="tile-flight"><span class="tile-flight-txt">KL 01723</span></div><div class="tile-time"><span class="tile-time-txt">13:15</span></div><div class="clear"></div></div><div class="tile-rht" id="id6"><div class="tile-flight"><span class="tile-flight-txt">KL 01927</span></div><div class="tile-time"><span class="tile-time-txt">15:40</span></div><div class="clear"></div></div></div></div><div id="output"></div><div id="overlay" class="web_dialog_overlay"></div><div id="dialog" class="web_dialog"><div class="web_dialog_title">Are you sure you want to do that?</div><div class="inWlbnr"><input id="btn-cancel" type="button" value="CANCEL" class="btnblu"/><input id="btn-ok" type="button" value="OK" class="btnblu"/></div></div></div></body></html>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html>
+<head>
+  <meta name="mobileoptimized" content="240"> 
+  
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/core.css" />
+  <script type="text/JavaScript" src="js/jquery.min.js"></script>
+  <script type="text/JavaScript">$.ajax({ type: "GET",  url: "js/main.js",  success: function(){}, dataType: "script",  cache: true	});
+</script>
+</head>
+<body>
+<div id="layout-width">
+	<div id="klm-hdr">
+	<div class="klm-hdr-logo"><img src="img/logo.jpg" width="56px" height="32px"/>
+	<span class="klm-hdr-rtp-logo">RTP</span>
+	</div>
+	<div class="hdr-dir-in"><span>Dir:IN</span></div>
+	<div class="hdr-logout" id="btn-logout"><img src="img/lock.png" width="32px" height="32px"/></div>
+	</div><!--Header Layout End-->
+	<div class="clear"></div>
+	<div id="rtp-title">
+	<div class="rtp-title-lft">Pick Ride</div>
+	<div class="rtp-title-rht"><span>X079152</span></div>
+	</div><!--Title Layer End-->
+	<div class="clear"></div>
+	<div id="layout-tile_in">
+		<div id="tile">
+		<div class="tile-lft red" id="id1"> 
+			<div  class="tile-flight" ><span class="tile-flight-txt">KL 01263</span></div>
+			<div class="tile-time"><span class="tile-time-txt">09:00</span></div>
+			<div class="clear"></div>
+		<!--Display 1-->
+		</div>
+		<div class="tile-rht red" id="id2">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01373</span></div>
+			<div class="tile-time"><span class="tile-time-txt">09:25</span></div>
+		<div class="clear"></div>
+		<!--Display 2-->
+		</div>
+		<div class="tile-lft orn" id="id3">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01473</span></div>
+			<div class="tile-time"><span class="tile-time-txt">10:00</span></div>
+			<div class="clear"></div>
+		<!--Display 3-->
+		</div>
+		<div class="tile-rht " id="id4">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01701</span></div>
+			<div class="tile-time"><span class="tile-time-txt">11:30</span></div>
+			<div class="clear"></div>
+		<!--Display 4-->
+		</div>
+		<div class="tile-lft" id="id5">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01723</span></div>
+			<div class="tile-time"><span class="tile-time-txt">13:15</span></div>
+			<div class="clear"></div>
+		<!--Display 5-->
+		</div>
+		<div class="tile-rht" id="id6">
+			<div  class="tile-flight"><span class="tile-flight-txt">KL 01927</span></div>
+			<div class="tile-time"><span class="tile-time-txt">15:40</span></div>
+			<div class="clear"></div>
+		<!--Display 6-->
+		</div>
+	</div>
+	</div><!--Content End-->
+	<!--Model Window Pop-Up Start -->
+	<div id="output"></div>
+    <div id="overlay" class="web_dialog_overlay"></div>
+	<div id="dialog" class="web_dialog">
+	<div  class="web_dialog_title">Are you sure you want to do that?</div>
+	
+		<div class="inWlbnr">
+			<input id="btn-cancel" type="button" value="CANCEL" class="btnblu"/>
+			<input id="btn-ok" type="button" value="OK" class="btnblu"/>
+		</div>
+		
+		</div>
+		
+	
+	<!--Model Window Pop-Up End -->
+</div><!--Main Container End-->
+
+</body>
+</html>
