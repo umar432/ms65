@@ -7,7 +7,7 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 /*Common*/
 #layout-width{ width:240px;padding:1px;}
 .clear{clear:both;}
-.grn{ background:#30b013 !important; color:#fff;}
+.grn{ background:#30b013 !important;}
 .blu{ background:#0da6e0!important;}
 .orn{background:#ee862e !important;}
 .red{background:#f70000 !important;}
