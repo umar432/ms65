@@ -37,34 +37,34 @@ $(document).ready(function()
 	$(".klm-hdr-logo").click(function () { window.location.href = "welcome.html"});
 	
 	/*Welcome Page*/
-	$('#btn-gc').click(function () { $(this).addClass('grn'); window.location.href = "dir-in-index.html"});
-	$('#btn-xps').click(function() { $(this).addClass('grn'); window.location.href = "dir-in-index.html"});	
+	$('#btn-gc').click(function () { $(this).css('background-color', '#30b013'); window.location.href = "dir-in-index.html"});
+	$('#btn-xps').click(function() { $(this).css('background-color', '#30b013'); window.location.href = "dir-in-index.html"});	
 	
 	/*dir -In Index Page*/
 	$('#id1').click(function () 
 	{ 
 		
-		$(this).addClass('grn'); window.location.href = "dir-in-ride.html?id1";
+		$(this).css('background-color', '#30b013'); window.location.href = "dir-in-ride.html?id1";
 	});
 	$('#id2').click(function () 
 	{ 
 		
-		$(this).addClass('grn'); window.location.href = "dir-in-ride.html?id1id2";
+		$(this).css('background-color', '#30b013'); window.location.href = "dir-in-ride.html?id1id2";
 	});
 	$('#id3').click(function () 
 	{ 
 		
-		$(this).addClass('grn'); window.location.href = "dir-in-ride.html?id1id2id3";
+		$(this).css('background-color', '#30b013'); window.location.href = "dir-in-ride.html?id1id2id3";
 	});
 	$('#id4').click(function () 
 	{ 
 		
-		$(this).addClass('grn'); window.location.href = "dir-in-ride.html?id1id2id3id4";
+		$(this).css('background-color', '#30b013'); window.location.href = "dir-in-ride.html?id1id2id3id4";
 	});
 	$('#id5').click(function () 
 	{ 
 		
-		$(this).addClass('grn'); window.location.href = "dir-in-ride.html?id1id2id3id4id5";
+		$(this).css('background-color', '#30b013'); window.location.href = "dir-in-ride.html?id1id2id3id4id5";
 	});
 	$('#btn-confirm').click(function (e) 
 	{
@@ -91,10 +91,10 @@ $(document).ready(function()
 	
 	$('#tuld').click(function() { $('#tuld-drop').toggleClass('tuld-drop');  $('#tuld-drop').children(":first").focus(); });
 	/*Index Page*/
-	$("#btn-logout").click(function (e) { $(this).addClass('grn'); $('#btn-cancel').removeClass('grn'); ShowDialog(true); e.preventDefault();  });/*Open Model Window*/
-	$("#btn-ok").click(function (e) {$(this).addClass('grn'); window.location.href="welcome.html"});/*redirect to welcome page*/
+	$("#btn-logout").click(function (e) { $(this).css('background-color', '#30b013'); $('#btn-cancel').removeClass('grn'); ShowDialog(true); e.preventDefault();  });/*Open Model Window*/
+	$("#btn-ok").click(function (e) {$(this).css('background-color', '#30b013'); window.location.href="welcome.html"});/*redirect to welcome page*/
 	$("#btn-cancel").click(function (e) {$('#btn-logout').removeClass('grn');  HideDialog_s(); e.preventDefault(); });/*hide model window*/
-	//$('#tile').click(function() { $(this).addClass('grn');window.location.href = "ride.html";});/*Pick the ride from Tile*/
+	//$('#tile').click(function() { $(this).css('background-color', '#30b013');window.location.href = "ride.html";});/*Pick the ride from Tile*/
 	$('#btn-done').click(function() { window.location.href="dir-out-index.html"; });
 	$('#layout-tile_out').click(function() { window.location.href="dir-out-ride.html"; });
 	
@@ -125,7 +125,7 @@ $(document).ready(function()
 
 	$('#btn-verify').click(function(e) 
 	{ 
-		$(this).addClass('grn');window.location.href="dir-out-delivery.html";	
+		$(this).css('background-color', '#30b013');window.location.href="dir-out-delivery.html";	
 		
 		
 	});
@@ -140,7 +140,7 @@ $(document).ready(function()
    });
 
 	$('#btn-reload').click(function() {  location.reload();});/*Reload or Refresh Button*/
-	$('#btn-reject').click(function() { $(this).addClass('grn');location.href('index.html')});/*Reject Button*/
+	$('#btn-reject').click(function() { $(this).css('background-color', '#30b013');location.href('index.html')});/*Reject Button*/
 	
 
 	
@@ -193,19 +193,19 @@ $(document).ready(function()
 				
 				if (val=="sec1")
 				{
-					$('#accordion-1 table').addClass('grn');
+					$('#accordion-1 table').css('background-color', '#30b013');
 					$('#accordion-1 table td:first-child').css('background-color','#FFF');
 				}
 				
 				else if (val=="sec2")
 				{
-					$('#accordion-2 table').addClass('grn');
+					$('#accordion-2 table').css('background-color', '#30b013');
 					$('#accordion-2 table td:first-child').css('background-color','#FFF');
 					
 				}
 				else if(val=="sec3")
 				{
-					$('#accordion-3 table').addClass('grn');
+					$('#accordion-3 table').css('background-color', '#30b013');
 					$('#accordion-3 table td:first-child').css('background-color','#FFF');
 					
 				}

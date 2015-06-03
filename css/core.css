@@ -7,10 +7,10 @@ body{margin:0px; padding:0px; background-color:#fff;   font: 13px/1.6 "Lucida Gr
 /*Common*/
 #layout-width{ width:240px;padding:1px;}
 .clear{clear:both;}
-.grn{ background:#30b013 !important;}
-.blu{ background:#0da6e0!important;}
-.orn{background:#ee862e !important;}
-.red{background:#f70000 !important;}
+.grn{ background-color:#30b013!important;}
+.blu{ background-color:#0da6e0!important;}
+.orn{background-color:#ee862e !important;}
+.red{background-color:#f70000 !important;}
 .strikeout{text-decoration: line-through; }
 /*Welcome*/
 .klm-wel-bdr{border:1px solid #0da6e0; height:298px; padding:10px;}
